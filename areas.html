@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        body {
+            background-image: url('Imagens/Fundo.jpg');
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start; 
+          overflow-y: auto; 
+          max-height: 100vh;
+        }
+      </style>
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Portifolio</title>
+</head>
+<body class="bg-cover bg-no-repeat bg-center max-h-screen">
+    
+    <!-- Navbar -->
+    <nav class="w-full h-16 py-0 px-4 sm:px-16 leading-[75px] fixed top-0 bg-[#00000033] flex justify-between items-center">
+        <!-- Home Title -->
+        <div class="text-xl font-bold text-white uppercase tracking-[2px] cursor-pointer">
+            <a href="index.html" class="  hover:text-gray-200 transition ease-in">Cazz's portifolio</a>
+        </div>
+        <ul class="hidden space-x-2 sm:space-x-4 md:flex">
+            <li class="list-none"><a href="areas.html" class="text-base sm:text-lg uppercase py-2 sm:py-8 text-white hover:text-gray-300 transition ease-in-out">áreas</a></li>
+            <li class="list-none"><a href="iot.html" class="text-base sm:text-lg uppercase py-2 sm:py-8 text-white hover:text-gray-300 transition ease-in-out">IOT</a></li>
+            <li class="list-none"><a href="eu.html" class="text-base sm:text-lg uppercase py-2 sm:py-8 text-white hover:text-gray-200 transition ease-in-out">Sobre mim</a></li>
+        </ul>
+        <div id="menuToggle" class="md:hidden cursor-pointer bg-opacity-70 rounded p-2">
+            <div class="w-6 h-0.5 bg-white mb-1"></div>
+            <div class="w-6 h-0.5 bg-white mb-1"></div>
+            <div class="w-6 h-0.5 bg-white mb-1"></div>
+        </div>
+    </nav>
+    <div id="menu" class="hidden z-10 bg-[#2e2e2e] p-4 transition-all duration-300 ease-in-out text-right absolute top-16 right-0 rounded-md">
+        <ul>
+            <li><a href="index.html" class="block py-2 text-white">Home</a></li>
+            <li><a href="areas.html" class="block py-2 text-white">áreas</a></li>
+            <li><a href="iot.html" class="block py-2 text-white">IOT</a></li>
+            <li><a href="eu.html" class="block py-2 text-white">Sobre Mim</a></li>
+        </ul>
+    </div>
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="grid grid-cols-1 mt-[23rem] sm:mt-0 sm:grid-cols-2 gap-5 p-4 md:p-0">
+            <div class="w-full rounded-[40px] bg-[#242424] mb-4 hover:scale-105 duration-200"> 
+                <img src="Imagens/CNT.webp" class="w-full h-[12rem] rounded-t-3xl object-cover">
+                <p class="p-[2rem] text-2xl text-white hover:text-gray-400 transition ease-in cursor-pointer" onclick="location.href='cnt.html';">Ciencias Naturais</p>
+            </div>
+            <div class="w-full rounded-[40px] bg-[#242424] mb-4 hover:scale-105 duration-200"> 
+                <img src="Imagens/LNG.png" class="w-full h-[12rem] rounded-t-3xl object-cover">
+                <p class="p-[2rem] text-2xl text-white hover:text-gray-400 transition ease-in cursor-pointer" onclick="location.href='lng.html';">Linguagens</p>
+            </div>
+            <div class="w-full rounded-[40px] bg-[#242424] mb-4 hover:scale-105 duration-200"> 
+                <img src="Imagens/MST.jpg" class="w-full h-[12rem] rounded-t-3xl object-cover">
+                <p class="p-[2rem] text-2xl text-white hover:text-gray-400 transition ease-in cursor-pointer" onclick="location.href='mst.html';">Matemática</p>
+            </div>
+            <div class="w-full rounded-[40px] bg-[#242424] mb-4 hover:scale-105 duration-200"> 
+                <img src="Imagens/CHS.jpg" class="w-full h-[12rem] rounded-t-3xl object-cover">
+                <p class="p-[2rem] text-2xl text-white hover:text-gray-400 transition ease-in cursor-pointer" onclick="location.href='chs.html';">Ciencias Humanas</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full h-12 bg-[#00000033] fixed bottom-0 flex items-center py-2 justify-between text-sm sm:text-base backdrop-blur-[15px]">
+        <p class="pl-5">Cazz Vicco</p>
+        <p class="font-bold">Todos os direitos reservados &copy;</p>
+        <p class="pr-5">IOT 1 3° Ano 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
